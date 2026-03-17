@@ -46,20 +46,17 @@ This metric is scale-invariant and perfectly suited for comparing linguistic "fi
 
 The system's accuracy relies on high-fidelity language profiles. Each language is represented by a probability distribution (normalized to a sum of 10,000 units) derived from established linguistic corpora.
 
-## Linguistic Reference Data & Sources
+## 📚 Linguistic Reference Data & Sources
 
-The system's accuracy relies on high-fidelity language profiles. Each language is represented by an exact probability distribution derived directly from established linguistic corpora and peer-reviewed literature:
+The system's accuracy relies on high-fidelity language profiles. The character frequency distributions for the fully validated languages in this dataset are 1:1 mappings derived directly from the following academic papers:
 
-| Language | Source / Corpus | Reference |
-| :--- | :--- | :--- |
-| **Romanian** | Romanian Literary Corpus | Mitrea, A. M. (2012). *Statistical Study on a Literary Romanian Corpus*. COMM 2012. |
-| **English** | Google Books Ngram Corpus | Norvig, P. (2012). *English Letter Frequency Counts*. |
-| **German** | Deutsches Referenzkorpus (DeReKo) | Trost, S. (2024). *Buchstaben- und Bigrammhäufigkeiten in der deutschen Sprache*. |
-| **Dutch** | SUBTLEX-NL / Syllable Frequency List | Keuleers et al. (2010) / Zuidema, W. (2009). |
-| **Hungarian** | Magyar Beszédkorpusz | Trost, S. (2005). *Betű- és Bigrammgyakoriságok a Magyar Nyelvben*. |
-| **Turkish** | Turkish National Corpus (TNC) | Trost, S. (2024). *Türkçe Harf ve Bigram Frekansları Üzerine Bir Çalışma*. |
+| Language | Academic Source |
+| :--- | :--- |
+| **English** | Abbas, R.H., & Kareem, F.A.E.A. (2019). *Text Language Identification Using Letters Analysis*. Journal of Southwest Jiaotong University. (Table 1, p. 4) |
+| **German** | Abbas, R.H., & Kareem, F.A.E.A. (2019). *Text Language Identification Using Letters Analysis*. Journal of Southwest Jiaotong University. (Table 1, p. 4) |
+| **Turkish** | Dalkılıç, M. E., & Dalkılıç, G. (2006). *On the Cryptographic Patterns and Frequencies in Turkish Language*. (Table 1) |
 
-*Note: All compositional vectors used in this project are 1:1 mappings of the empirical data provided in the referenced academic papers, preserving the exact statistical constraints required for Aitchison distance calculations.*
+*(Note: Data for Romanian, Dutch, and Hungarian are pending integration from their respective primary corpus studies).*
 
 ### Frequency Normalization Strategy
 To ensure a rigorous comparison in the **Aitchison geometry**, all language profiles follow a "closed" composition:
